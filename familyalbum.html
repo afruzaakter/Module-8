@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         .photo-album{
+            display: flex;
+            flex-wrap: wrap;
+            
+        } 
+        .photo-frame{
+            width: 300px;
+            border: 2px solid rosybrown;
+            border-radius: 10px;
+            position: relative;
+            margin: 15px;
+            overflow: hidden;
+        }
+         
+        .photo img{
+            width: 100%;
+            border-radius: 10px;
+        }
+        .photo-detail{
+            position: absolute;
+            width: 300px;
+            top: 0;
+            text-align: center;
+            display: none;
+        }
+        .photo-frame:hover .photo-detail{
+            background-color: rgba(148, 125, 125, 0.493);
+            display: block;
+        }
+        .container{
+            width: 80%;
+            margin: 0 auto;
+        }
+        .photo-frame:hover .photo{
+            transform: scale(1.5) rotate(370deg);
+            transition: transform 2s ease-in-out;
+        }
+        h1, h3{
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>My Baby Photo Album</h1>
+    <section class="container">
+        <h3>Talha album</h3>
+        <div class="photo-album">
+           <div class="photo-frame">
+            <div class="photo">
+                <img src="image/talha.jpeg" alt="">
+             </div>
+             <div class="photo-detail">
+            <h3>talh photo</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, dolores. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim quisquam dolor veritatis </p>
+           </div>
+        </div>
+
+       <div class="photo-frame">
+            <div class="photo">
+                <img src="image/2.jpeg" alt="">
+             </div>
+             <div class="photo-detail">
+            <h3>talh photo</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, dolores. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim quisquam dolor veritatis</p>
+           </div>
+        </div>
+
+        <div class="photo-frame">
+            <div class="photo">
+                <img src="image/3.jpeg" alt="">
+             </div>
+             <div class="photo-detail">
+            <h3>talh photo</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, dolores. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim quisquam dolor veritatis</p>
+           </div>
+        </div>
+
+        <div class="photo-frame">
+            <div class="photo">
+                <img src="image/4.jpeg" alt="">
+             </div>
+             <div class="photo-detail">
+            <h3>talh photo</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, dolores. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim quisquam dolor veritatis</p>
+           </div>
+        </div>
+
+        <div class="photo-frame">
+            <div class="photo">
+                <img src="image/6.jpeg" alt="">
+             </div>
+             <div class="photo-detail">
+            <h3>talh photo</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, dolores. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim quisquam dolor veritatis</p>
+           </div>
+        </div>
+
+        <div class="photo-frame">
+            <div class="photo">
+                <img src="image/5.jpeg" alt="">
+             </div>
+             <div class="photo-detail">
+            <h3>talh photo</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, dolores. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim quisquam dolor veritatis</p>
+           </div>
+        </div>
+        </div>
+    </section>
+</body>
+</html>
